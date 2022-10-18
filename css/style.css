@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: grey !important;
+}
+a{
+    text-decoration: none;
+    color: #CCCCFF !important;
+}
+a:hover{
+    color: white !important;
+}
+.navbar{
+    opacity: 0.7;
+}
+.bnd{
+    border-right: 1px solid #ccc;
+    padding-right:10px ;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-left: 12px;
+}
+.bnd:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+}
+
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
+.fr{
+    margin-left: auto;
+}
+.fr button{
+    margin:0 10px;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
+.carousel-inner h1{
+    text-shadow: 1px 1px #333;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+}
+.text-info{
+    font-size: 19px
+}
+.btnbefo::after{
+    position: absolute;
+    content: " ";
+    height: 40px;
+    width: 80px;
+    background-color: lightblue;
+    top: 100px;
+    left: 16px;
+    border-radius: 5px;
+    display: none;
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.btnbefo::before{
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style:solid;
+    border-color: transparent transparent lightblue transparent;
+    top: 80px;
+    left: 40px;
+    display: none;
+}
+
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+}
+.fixedimg{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+}
+.fImg1{
+    background-image: url(../images/fixed1.jpg);
+}
+.fImg2{
+    background-image: url(../images/fixed2.jpg);
+}
+.icon-join{
+    height:40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
